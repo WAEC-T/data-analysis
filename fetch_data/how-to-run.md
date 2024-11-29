@@ -4,8 +4,44 @@ This script allows you to download files from an AWS S3 bucket to a local folder
 
 ## Prerequisites
 
-### 1. Install Python
-Ensure that Python 3.6 or higher is installed on your system. You can download Python from [python.org](https://www.python.org/).
+### 1. Install AWS-CLI Tool
+To fetch data via the script, you need the AWS CLI Tool, so go get it!
+
+#### AWS OWN DOCUMENATION:
+[How to install AWS-CLI Tool](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+
+#### Basically this...
+
+If you have sudo permissions, you can install the AWS CLI for all users on the computer. We provide the steps in one easy to copy and paste group. See the descriptions of each line in the following steps.
+
+```bash
+$ curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
+$ sudo installer -pkg AWSCLIV2.pkg -target /
+```
+#### Guided installation instructions
+Download the file using the curl command. The -o option specifies the file name that the downloaded package is written to. In this example, the file is written to AWSCLIV2.pkg in the current folder.
+
+```bash
+$ curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
+```
+
+```bash
+$ sudo installer -pkg ./AWSCLIV2.pkg -target /
+```
+
+To verify that the shell can find and run the aws command in your $PATH, use the following commands.
+
+```bash
+$ which aws
+```
+should output /usr/local/bin/aws 
+
+```bash
+$ aws --version
+```
+should output aws-cli/2.19.1 Python/3.11.6 Darwin/23.3.0 botocore/2.4.5
+
+If the aws command cannot be found, you might need to restart your terminal or follow the troubleshooting in Troubleshooting errors for the AWS CLI.
 
 ### 2. Install Required Libraries
 This script uses the `boto3` library to interact with AWS S3. Install the required library by running:

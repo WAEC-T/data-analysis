@@ -1,0 +1,7 @@
+base power (W);min (q0);q1;median (q2);q3;max (q4);mean (μ);std (σ)
+1_alpine_os;2.79;2.837;2.889;2.894;2.98;2.877;0.035
+2_alpine_os_docker_daemon;2.817;2.858;2.878;2.885;2.926;2.87;0.025
+3_alpine_os_docker_daemon_python_flask;2.884;2.898;2.903;2.907;2.922;2.903;0.006
+4_alpine_os_docker_daemon_python_flask_load;2.824;2.882;2.916;2.937;3.02;2.908;0.036
+5_alpine_os_python_flask;2.902;2.915;2.919;2.923;2.936;2.919;0.005
+6_alpine_os_python_flask_load;2.869;2.91;2.92;2.937;2.977;2.922;0.019

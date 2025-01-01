@@ -12,7 +12,7 @@ def download_from_s3(bucket_name, local_folder, s3_prefix=""):
     :return: True if all files were downloaded successfully, False otherwise.
     """
     s3_client = boto3.client('s3')
-    
+
     try:
         # Ensure the local folder exists
         if not os.path.exists(local_folder):

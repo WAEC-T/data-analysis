@@ -1,0 +1,8 @@
+Application;Mean Energy (J);Lower Bound (90%);Upper Bound (90%);Margin of Error;Required Sample Size
+rust-actix;148.9;144.252;153.548;4.648;62657.0
+ruby-sinatra;111.637;111.13;112.144;0.507;747.0
+go-gorilla;114.992;114.273;115.711;0.719;1498.0
+go-gin;114.054;113.376;114.732;0.678;1333.0
+python-flask;110.742;110.321;111.163;0.421;514.0
+c-sharp-razor;112.755;112.355;113.155;0.4;465.0
+javascript-express;76.169;75.915;76.423;0.254;187.0
